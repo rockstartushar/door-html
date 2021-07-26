@@ -793,365 +793,349 @@
 
 <!-- filter -->
 
-<section class="filter mt-5 accordion" id="accordionExample">
-
-<div class="container " >
-    <div class="row">
-    	<div class="col-12 d-block d-lg-none d-md-none">
-			<button type="button" class="btn btn-filter" data-toggle="modal" data-target="#myModal">
-				<img style="width: 30px;" class="mr-3" src="img/filter.png"> FILTER
-			</button>
-		<!-- filter model start -->
-			<div class="modal" id="myModal" aria-modal="true" role="dialog">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-				  
-				    <!-- Modal Header -->
-				    <div class="modal-header">
-				      <h4 class="modal-title">FILTER</h4>
-				      <button type="button" class="close" data-dismiss="modal">×</button>
+<section class=" mt-5 details_page">
+	<div class="container " >
+	    <div class="row">
+	    	<div class="col-md-6">
+				<!-- <div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div> -->
+	    		<div class="pos_sti"> 
+				<!-- Swiper -->
+				    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+				      class="swiper-container mySwiper2"
+				    >
+				      <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				          <img src="img/pringles-chair-1_3.jpg" />
+				        </div>
+				        <div class="swiper-slide">
+				          <img src="img/sven-bar-stool---white---grey-1_1.jpg" />
+				        </div>
+				        <div class="swiper-slide">
+				          <img src="img/geo-chair-_ms_-1_1.jpg" />
+				        </div>
+				        <div class="swiper-slide">
+				          <img src="img/theatre-solid-teak-wood-chair--1_2.jpg" />
+				        </div>
+				      </div>
+				      
 				    </div>
-				    
-			    <!-- Modal body -->
-			    <div class="modal-body p-0">
-					<ul class="d-block">
-					    <li class="ml-3">
-					    	<img style="    width: 30px;" src="img/filter.png">
-					    </li>
-					    <li id="headingOne" >
-					        <a class="" data-toggle="collapse" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
-					            LEAD TIME 
-					            <i class="fa fa-angle-down" aria-hidden="true"></i>
-					        </a>
-					    </li>
-						<div class="container collapse p-0" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
-						    <div class="sub_cat" >
-						        <div class="d-flex py-3 px-3" >
-						        	<input type="checkbox"> 
-						        	<span class="sub_sp">in stock</span> 
-						        	<span class="sub_sp1">(17)</span>
-						        </div>
-						        <div class="d-flex py-3 px-3">
-						        	<input type="checkbox"> 
-						        	<span class="sub_sp">2-3 week</span> 
-						        	<span class="sub_sp1">(34)</span>
-						        </div>
-						        <div class="d-flex py-3 px-3">
-						        	<input type="checkbox"> 
-						        	<span class="sub_sp">3-5 week</span> 
-						        	<span class="sub_sp1">(50)</span>
-						        </div>
-						        <div class="d-flex py-3 px-3">
-						        	<input type="checkbox"> 
-						        	<span class="sub_sp">4-6 week</span> 
-						        	<span class="sub_sp1">(65)</span>
-						        </div>
-						        <div class="d-flex py-3 px-3">
-						        	<input type="checkbox"> 
-						        	<span class="sub_sp">6-8 week</span> 
-						        	<span class="sub_sp1">(85)</span>
-						        </div>
-						        <div class="d-flex py-3 px-3">
-						        	<input type="checkbox"> 
-						        	<span class="sub_sp">8-10 week</span> 
-						        	<span class="sub_sp1">(94)</span></div>
-						    </div>
-						    
-						</div>
-						    
-					    <li id="headingTwo">
-					        <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
-					            Price 
-					            <i class="fa fa-angle-down" aria-hidden="true"></i>
-					        </a>
-					    </li>
 
-						<div class="container collapse p-0" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						    <div class="sub_cat">
-						        <div class="d-flex py-3 px-3" ><input type="checkbox"> <span class="sub_sp">in stock</span> <span class="sub_sp1">(17)</span></div>
-						        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">2-3 week</span> <span class="sub_sp1">(34)</span></div>
-						        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">3-5 week</span> <span class="sub_sp1">(50)</span></div>
-						    </div>
-						</div>
-
-						    <li id="headingThree"><a  class="collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						        Seating
-						        <i class="fa fa-angle-down" aria-hidden="true"></i>
-						    </a>
-						</li>
-
-						<div class="container collapse p-0" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
-						    <div class="sub_cat">
-						        <div class="d-flex py-3 px-3" ><input type="checkbox"> <span class="sub_sp">in stock</span> <span class="sub_sp1">(17)</span></div>
-						        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">2-3 week</span> <span class="sub_sp1">(34)</span></div>
-						        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">3-5 week</span> <span class="sub_sp1">(50)</span></div>
-						    </div>
-						</div>
-
-						<li id="headingfour"><a class="collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-						        Table shape
-						        <i class="fa fa-angle-down" aria-hidden="true"></i>
-						    </a>
-						</li>
-
-
-						<div class="container collapse p-0" id="collapsefour" aria-labelledby="headingfour" data-parent="#accordionExample">
-						    <div class="sub_cat">
-						        <div class="d-flex py-3 px-3" ><input type="checkbox"> <span class="sub_sp">in stock</span> <span class="sub_sp1">(17)</span></div>
-						        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">2-3 week</span> <span class="sub_sp1">(34)</span></div>
-						        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">3-5 week</span> <span class="sub_sp1">(50)</span></div>
-						    </div>
-						</div>
-
-
-						<li id="headingfive"><a class="collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-						    Furniture Type
-						    <i class="fa fa-angle-down" aria-hidden="true"></i>
-						</a>
-						</li>
-
-						<div class="container collapse p-0" id="collapsefive" aria-labelledby="headingfive" data-parent="#accordionExample">
-						    <div class="sub_cat">
-						        <div class="d-flex py-3 px-3" ><input type="checkbox"> <span class="sub_sp">in stock</span> <span class="sub_sp1">(17)</span></div>
-						        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">2-3 week</span> <span class="sub_sp1">(34)</span></div>
-						        
-						    </div>
-						</div>
-
-
-						<li id="headingsix"><a class="collapsed" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-						Table Feature
-						<i class="fa fa-angle-down" aria-hidden="true"></i>
-						</a>
-						</li>
-
-						<div class="container collapse p-0" id="collapsesix" aria-labelledby="headingsix" data-parent="#accordionExample">
-						    <div class="sub_cat">
-						        <div class="d-flex py-3 px-3" ><input type="checkbox"> <span class="sub_sp">in stock</span> <span class="sub_sp1">(17)</span></div>
-						        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">2-3 week</span> <span class="sub_sp1">(34)</span></div>
-						        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">3-5 week</span> <span class="sub_sp1">(50)</span></div>
-						        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">3-5 week</span> <span class="sub_sp1">(50)</span></div>
-						    </div>
-						</div>
-						</ul>
+				    <div thumbsSlider="" class="swiper-container mt-4 mySwiper">
+				      <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				          <img src="img/pringles-chair-1_3.jpg" />
+				        </div>
+				        <div class="swiper-slide">
+				          <img src="img/sven-bar-stool---white---grey-1_1.jpg" />
+				        </div>
+				        <div class="swiper-slide">
+				          <img src="img/geo-chair-_ms_-1_1.jpg" />
+				        </div>
+				        <div class="swiper-slide">
+				          <img src="img/theatre-solid-teak-wood-chair--1_2.jpg" />
+				        </div>
+				      </div>
 				    </div>
 				  </div>
-				</div>
+	    	</div>	
+	    	<div class="col-md-6 mr-auto det_text">
+					<h4 class="mb-0 mt-3 mt-lg-0">Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</h4>
+					<p class="write_rat">
+						<span>Write Your Review</span>
+					</p>
+
+					<p>
+						Availability:
+						<span class="stok">In stock</span>
+					</p>
+
+					<p class="old_price mb-0">
+						<span>M.R.P: </span>
+						<del> Rs.480.00 </del>
+					</p>
+
+					<p class="special_price mb-0">
+						<span>Sale Price: </span>
+						<span class="price_label">Rs.350.00</span>
+						<span>per Chair</span>
+						<span class="deal_percent">
+							<span>27% off</span>
+						</span>
+					</p>
+					<p class="taxnote">* Inclusive of all Taxes</p>
+
+					<p class="mb-0">
+						by 
+						<span class="stok">Create Outdoor</span>
+					</p>
+
+					<span style="font-size: x-small;">Create Outdoor Chair price.</span>
+
+					<p>Prices Displayed are per Chair. Free shipping for orders above 50 chair.</p>
+
+					<div class="qty-block">
+						<label for="qty">Qty:</label>
+						<div class="cart-plus-minus">
+							<span type="button" class="btn cart-minus-1">-</span>
+							<input type="text" name="qty" id="qty" maxlength="12" value="150" title="Qty" class="input-text qty">
+							<span type="button" class="btn cart-plus-1">+</span>
+						</div>
+						<input type="hidden" id="minorder" value="150">
+						<div class="min-qty">Minimum Order Qty : 150</div>
+					</div>
+
+					<div class="row mt-4">
+						<div class="col-md-6">
+							<a href="cart.html">
+								<button class="add_btn">ADD TO CART</button>
+							</a>
+						</div>
+						<div class="col-md-6">
+							<a href="checkout.html">
+								<button class="pro_btn">PROCEED TO CHECKOUT</button>
+							</a>
+						</div>
+					</div>
+
+					<p class="text_uper mt-4 mb-0">Delivery </p>
+					<p class=""><b>Usually Delivers in 12 to 48 hours</b> </p>
+
+					<p class="text_uper mt-4">Shipping</p>
+					<p class="">Free shipping on all orders
+						<small>(Subject to order value)</small>
+					</p>
+
+
+					<p class="text_uper mt-4">Easy Payment Options</p>
+					<p class="">
+						<ul class="pl-3">
+							<li>Net banking & Credit/ Debit/ UPI</li>
+							<li>Cash on Delivery</li>
+							<li>Demand Draft / Cheque / Money order</li>
+						</ul>
+					</p>
+
+					<div class="accordion" id="accordionExample">
+					  <div class="card">
+					    <div class="card-header" id="headingOne">
+					      <h2 class="mb-0">
+					        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Product Description
+					        </button>
+					      </h2>
+					    </div>
+
+					    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+					      <div class="card-body">
+					        
+						The Windsor Sofa Collection has a unique blend of design, comfort and style. The Windsor 2 has been crafted with an exceptional eye for detail and was designed with superior comfort in mind. This has been achieved thanks to the deep seating and high quality cushioning that has dual-density foam, this ensures you not only get the perfect looking sofa set but you also benefit from the extra comfort and support. When not in use the footstools simply tuck away under the coffee table.    
+					      </div>
+					    </div>
+					  </div>
+
+					   <div class="card">
+					    <div class="card-header" id="headingTwo">
+					      <h2 class="mb-0">
+					        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+					          Product Specifications
+					        </button>
+					      </h2>
+					    </div>
+
+					    <div id="collapseTwo" class=" show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					      <div class="card-body">
+					        
+							<div class="product-full-content">
+							   <div class="product-full-content-inner">
+							      <strong>Additional Information</strong>
+							      <table class="data-table w-100" id="product-attribute-specs-table">
+							         <tbody>
+							            <tr class="">
+							               <th class="label">SKU</th>
+							               <td class="data last">CEOTHRRAC0004</td>
+							            </tr>
+							            <tr class="">
+							               <th class="label">Size</th>
+							               <!--                <td class="data"></td>-->
+							               <td class="data last">
+							                  3 ft.                        
+							               </td>
+							            </tr>
+							            <tr class="">
+							               <th class="label">Brand / Manufacturer</th>
+							               <!--                <td class="data"></td>-->
+							               <td class="data last">
+							                  Create outdoor                        
+							               </td>
+							            </tr>
+							         </tbody>
+							      </table>
+							   </div>
+							</div>    
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>	
+	    </div>
+	</div>
+</section>
+<!-- product details end -->
+
+
+
+<!-- related products start -->
+
+
+<section class="mt-5 pt-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>RELATED PRODUCTS</h1>
+				<p>The furniture our customers love:</p>
 			</div>
 		</div>
+		
+		<div class="row  cate_row">
+				<div class="col-md-12">
+				  <!-- Swiper -->
+				  	  <div class="swiper-button-next"></div>
+				      <div class="swiper-button-prev"></div>
+				    <div class="swiper-container mySwiper">
+				      <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				          <div class=" mb-4">
+				          <div class="bor_ra">
+				          	<a href="productdetails.html">
+				            <img src="img/pringles-chair-1_3.jpg">
+				        	</a>
+				            <p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
+				            <div class="price_box_cut">
+				              <del>
+					              <span>M.R.P: </span>
+					              <span>Rs.40.00</span>
+				              </del>
+				            </div>
+				            <div class="price_box">
+				              
+				              <p><span>Sale Price:</span>Rs.38.00</p>
+				            </div>
+				            <div>
+				              <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
+				            </div>
+				          </div>
+				        </div>
+				        </div>
+				        <div class="swiper-slide">
+				          <div class=" mb-4">
+				          <div class="bor_ra">
+				          	<a href="productdetails.html">
+				            <img src="img/sven-bar-stool---white---grey-1_1.jpg">
+				        	</a>
+				            <p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
+				            <div class="price_box_cut">
+				              <del>
+					              <span>M.R.P: </span>
+					              <span>Rs.40.00</span>
+				              </del>
+				            </div>
+				            <div class="price_box">
+				              
+				              <p><span>Sale Price:  </span>Rs.38.00</p>
+				            </div>
+				            <div>
+				              <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
+				            </div>
+				          </div>
+				        </div>
+				        </div>
+				        <div class="swiper-slide">
+				          <div class=" mb-4">
+				          <div class="bor_ra">
+				          	<a href="productdetails.html">
+				            <img src="img/geo-chair-_ms_-1_1.jpg">
+				            </a>
+				            <p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
+				            <div class="price_box_cut">
+				              <del>
+					              <span>M.R.P: </span>
+					              <span>Rs.40.00</span>
+				              </del>
+				            </div>
+				            <div class="price_box">
+				              
+				              <p><span>Sale Price:  </span>Rs.38.00</p>
+				            </div>
+				            <div>
+				              <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
+				            </div>
+				          </div>
+				        </div>
+				        </div>
+				        <div class="swiper-slide">
+				          <div class=" mb-4">
+				          <div class="bor_ra">
+				          	<a href="productdetails.html">
+				            <img src="img/theatre-solid-teak-wood-chair--1_2.jpg">
+				            </a>
+				            <p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
+				            <div class="price_box_cut">
+				              <del>
+					              <span>M.R.P: </span>
+					              <span>Rs.40.00</span>
+				              </del>
+				            </div>
+				            <div class="price_box">
+				              
+				              <p><span>Sale Price:  </span>Rs.38.00</p>
+				            </div>
+				            <div>
+				              <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
+				            </div>
+				          </div>
+				        </div>
+				        </div>
+				        <div class="swiper-slide">
+				          <div class=" mb-4">
+				          <div class="bor_ra">
+				          	<a href="productdetails.html">
+				            <img src="img/arne-metal---solid-wood-chair-with-arms---steam-beech-1_1.jpg">
+				            </a>
+				            <p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
+				            <div class="price_box_cut">
+				              <del>
+					              <span>M.R.P: </span>
+					              <span>Rs.40.00</span>
+				              </del>
+				            </div>
+				            <div class="price_box">
+				              
+				              <p><span>Sale Price:  </span>Rs.38.00</p>
+				            </div>
+				            <div>
+				              <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
+				            </div>
+				          </div>
+				        </div>
+				        </div>
+				      </div>
+				      
+				      <!-- <div class="swiper-pagination"></div> -->
+				    </div>
+				</div>
 
-        <div class="col-12 d-none d-lg-block d-md-block">
-			<!-- filter model end -->
-            <ul>
-                <li class="ml-3">
-                	<img style="    width: 30px;" src="img/filter.png">
-                </li>
-                <li id="headingOne" >
-                    <a class="" data-toggle="collapse" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
-                        LEAD TIME 
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </a>
-                </li>
-
-                
-                <li id="headingTwo">
-                    <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
-                       Price
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </a>
-                </li>
-
-                <li id="headingThree"><a  class="collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                   Seating
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </a>
-            </li>
-                <li id="headingfour"><a class="collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                    Table shape
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li id="headingfive"><a class="collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-               Furniture Type
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
-        </li>
-        <li id="headingsix"><a class="collapsed" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-            Table Feature
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-        </a>
-    </li>
-            </ul>
-        </div>
-    </div>
-    
-</div>
-<div class="container collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
-    <div class="sub_cat" >
-        <div class="d-flex py-3 px-3" >
-        	<input type="checkbox"> 
-        	<span class="sub_sp">in stock</span> 
-        	<span class="sub_sp1">(17)</span>
-        </div>
-        <div class="d-flex py-3 px-3">
-        	<input type="checkbox"> 
-        	<span class="sub_sp">2-3 week</span> 
-        	<span class="sub_sp1">(34)</span>
-        </div>
-        <div class="d-flex py-3 px-3">
-        	<input type="checkbox"> 
-        	<span class="sub_sp">3-5 week</span> 
-        	<span class="sub_sp1">(50)</span>
-        </div>
-        <div class="d-flex py-3 px-3">
-        	<input type="checkbox"> 
-        	<span class="sub_sp">4-6 week</span> 
-        	<span class="sub_sp1">(65)</span>
-        </div>
-        <div class="d-flex py-3 px-3">
-        	<input type="checkbox"> 
-        	<span class="sub_sp">6-8 week</span> 
-        	<span class="sub_sp1">(85)</span>
-        </div>
-        <div class="d-flex py-3 px-3">
-        	<input type="checkbox"> 
-        	<span class="sub_sp">8-10 week</span> 
-        	<span class="sub_sp1">(94)</span></div>
-    </div>
-    
-</div>
-<div class="container collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
-    <div class="sub_cat">
-        <div class="d-flex py-3 px-3" ><input type="checkbox"> <span class="sub_sp">in stock</span> <span class="sub_sp1">(17)</span></div>
-        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">2-3 week</span> <span class="sub_sp1">(34)</span></div>
-        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">3-5 week</span> <span class="sub_sp1">(50)</span></div>
-    </div>
-</div>
-<div class="container collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
-    <div class="sub_cat">
-        <div class="d-flex py-3 px-3" ><input type="checkbox"> <span class="sub_sp">in stock</span> <span class="sub_sp1">(17)</span></div>
-        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">2-3 week</span> <span class="sub_sp1">(34)</span></div>
-        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">3-5 week</span> <span class="sub_sp1">(50)</span></div>
-    </div>
-</div>
-<div class="container collapse" id="collapsefour" aria-labelledby="headingfour" data-parent="#accordionExample">
-    <div class="sub_cat">
-        <div class="d-flex py-3 px-3" ><input type="checkbox"> <span class="sub_sp">in stock</span> <span class="sub_sp1">(17)</span></div>
-        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">2-3 week</span> <span class="sub_sp1">(34)</span></div>
-        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">3-5 week</span> <span class="sub_sp1">(50)</span></div>
-    </div>
-</div>
-<div class="container collapse" id="collapsefive" aria-labelledby="headingfive" data-parent="#accordionExample">
-    <div class="sub_cat">
-        <div class="d-flex py-3 px-3" ><input type="checkbox"> <span class="sub_sp">in stock</span> <span class="sub_sp1">(17)</span></div>
-        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">2-3 week</span> <span class="sub_sp1">(34)</span></div>
-        
-    </div>
-</div>
-<div class="container collapse" id="collapsesix" aria-labelledby="headingsix" data-parent="#accordionExample">
-    <div class="sub_cat">
-        <div class="d-flex py-3 px-3" ><input type="checkbox"> <span class="sub_sp">in stock</span> <span class="sub_sp1">(17)</span></div>
-        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">2-3 week</span> <span class="sub_sp1">(34)</span></div>
-        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">3-5 week</span> <span class="sub_sp1">(50)</span></div>
-        <div class="d-flex py-3 px-3"><input type="checkbox"> <span class="sub_sp">3-5 week</span> <span class="sub_sp1">(50)</span></div>
-    </div>
-</div>
-
+			</div>
+	</div>
 </section>
-<section class="filter_img mt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-6 mb-4">
-                      
-                <div class="bor_ra">
-                  <a href="productdetails.html">
-                    <img src="img/theatre-solid-teak-wood-chair--1_2.jpg">
-                </a>
-                  <p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
-                  <div class="price_box_cut">
-                    <del>
-                      <span>M.R.P: </span>
-                      <span>Rs.40.00</span>
-                    </del>
-                  </div>
-                  <div class="price_box">
-                    
-                    <p><span>Sale Price:</span>Rs.38.00</p>
-                  </div>
-                  <div>
-                    <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-6 mb-4">
-                      
-                <div class="bor_ra">
-                  <a href="productdetails.html">
-                    <img src="img/theatre-solid-teak-wood-chair--1_2.jpg">
-                </a>
-                  <p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
-                  <div class="price_box_cut">
-                    <del>
-                      <span>M.R.P: </span>
-                      <span>Rs.40.00</span>
-                    </del>
-                  </div>
-                  <div class="price_box">
-                    
-                    <p><span>Sale Price:</span>Rs.38.00</p>
-                  </div>
-                  <div>
-                    <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-6 mb-4">
-                      
-                <div class="bor_ra">
-                  <a href="productdetails.html">
-                    <img src="img/theatre-solid-teak-wood-chair--1_2.jpg">
-                </a>
-                  <p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
-                  <div class="price_box_cut">
-                    <del>
-                      <span>M.R.P: </span>
-                      <span>Rs.40.00</span>
-                    </del>
-                  </div>
-                  <div class="price_box">
-                    
-                    <p><span>Sale Price:</span>Rs.38.00</p>
-                  </div>
-                  <div>
-                    <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-6 mb-4">
-                      
-                <div class="bor_ra">
-                  <a href="productdetails.html">
-                    <img src="img/theatre-solid-teak-wood-chair--1_2.jpg">
-                </a>
-                  <p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
-                  <div class="price_box_cut">
-                    <del>
-                      <span>M.R.P: </span>
-                      <span>Rs.40.00</span>
-                    </del>
-                  </div>
-                  <div class="price_box">
-                    
-                    <p><span>Sale Price:</span>Rs.38.00</p>
-                  </div>
-                  <div>
-                    <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </div>
-</section>
+
+<!-- related products  end -->
+
+
+
+
+
+
 
 <!-- footer start -->
 
@@ -1410,9 +1394,26 @@ btn.addEventListener('click', function (event) {
     	});
 
     </script>
-
-
-    <script type="text/javascript">
+    <script>
+      var swiper = new Swiper(".pos_sti .mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".pos_sti .mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".pos_sti .swiper-button-next",
+          prevEl: ".pos_sti .swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+        <script type="text/javascript">
     	
 
 		var mq = window.matchMedia( "(max-width: 570px)" );
