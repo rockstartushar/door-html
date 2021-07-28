@@ -957,7 +957,17 @@ footer i{
 		margin-bottom: 1rem;
 	}
 
-	.data-table, tr, td, th{
+	.cart_table tr{
+		/*display: block;*/
+		position: relative;
+	}
+
+	.cart_table th{
+		display: block;
+		position: relative;
+	}
+
+	.cart_table td{
 		display: block;
 		position: relative;
 	}
@@ -973,7 +983,7 @@ footer i{
 		width: 50%;
 	}
 
-	.data-table, td.pl-1{
+	.cart_table .data-table, td.pl-1{
 		right: 0;
 		top: 15px;
 		position: absolute;
