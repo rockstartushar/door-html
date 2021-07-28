@@ -54,6 +54,15 @@ header {
 
 }
 
+.close_side{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	z-index: 500;
+
+}
+
+
 .brand_logo img {
 	width: 130px;
 }
@@ -759,6 +768,19 @@ sub{
 /*checkout css end*/
 
 
+/*wishlist css start*/
+
+.remove_wish{
+    width: 25px;
+    position: absolute;
+    right: 15px;
+    z-index: 20;
+    top: 0;
+    background: #ff9501;
+}
+
+/*wishlist css end*/
+
 
 
 /*footer css start*/
@@ -803,6 +825,10 @@ sub{
     -ms-flex-positive: 1;
     flex-grow: 1;
     width: 83%;
+}
+
+footer i{
+	font-size: 26px !important;
 }
 
 /* footer css end */
@@ -862,8 +888,13 @@ sub{
 		margin: 15px;
 	}
 
+
+	.footer h4{
+		text-align: center;
+	}
+
 	footer .view_btn{
-		width: 89px;
+		width: 134px;
 	}
 
 	.top_menu ul li{
@@ -928,6 +959,7 @@ sub{
 
 	.data-table, tr, td, th{
 		display: block;
+		position: relative;
 	}
 
 
@@ -942,7 +974,7 @@ sub{
 	}
 
 	.data-table, td.pl-1{
-		right: 15px;
+		right: 0;
 		top: 15px;
 		position: absolute;
 		width: auto !important;
