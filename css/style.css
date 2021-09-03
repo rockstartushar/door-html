@@ -317,7 +317,7 @@ header {
 
 .view_btn {
 	cursor: pointer;
-	background: #ff9501;
+	background: #f38d64;
 	border: 0;
 	color: #ffff;
 	height: 40px;
@@ -327,7 +327,7 @@ header {
 
 .bor_ra button {
 	cursor: pointer;
-	background: #ff9501;
+	background: #f38d64;
 	border: 0;
 	color: #ffff;
 	height: 40px;
@@ -335,7 +335,7 @@ header {
 }
 
 .price_box p span {
-	color: #74aa62;
+	color: #d0d0d0;
 }
 
 /*categories css end*/
@@ -386,7 +386,7 @@ header {
 	list-style: none;
 	padding: 0;
 	border: 1px solid #9999;
-	
+
 }
 
 .btn.btn-filter{
