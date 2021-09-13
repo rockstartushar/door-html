@@ -11,6 +11,24 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <style media="screen">
+    .cont_f input {
+
+     /* box-shadow: 0px 0px 6px 0px #52c1b7; */
+    width: 100%;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+
+    border: 1px solid #de542d;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline: 0 !important;
+  }
+  </style>
 </head>
 <body>
 
@@ -1101,118 +1119,148 @@
 
 <!-- header end -->
 
+<section class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="">
+          <img src="img\modern-living-room-interior-with-sofa-green-plants.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="">
+          <img src="img\modern-vintage-interior-living-room-blueprint-home-decor-concept-green-couch-with-marble-table-blue-wall-hardwood-flooring-3d-render.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- login start -->
+<section class="cont_f">
+  <div class="container">
+    <h2 style="text-align:center;text-decoration:underline;" class="mt-5 mb-5">Custom Order</h2>
+    <div class="row">
+      <div class="col-sm-9">
+        <form class="" action="index.html" method="post">
+          <label for="email">First Name<span style="color:red;">*</span></label>
+            <input type="text" class="form-control" placeholder="Enter FirstName" id="first_name" name="first_name" required>
 
-	<section class="mt-5 mb-5 pt-lg-5 pb-5">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-8 checkout_colm">
-					<form class="d-block ">
-						<p><a class="method_span">1</a>SHIPPING ADDRESS</p>
-						<span>Fields marked with * are required.</span>
-						<label class="d-block">Email Address <sub>*</sub></label>
-						<input type="email" name="">
-						<div class="d-inline-flex align-items-baseline ">
-							<input class="mr-3" type="checkbox" name="">
-							<label> Subscribe to receive newsletter updates about the latest products and trends for outdoor living. Your personal details will not be shared</label>
-						</div>
-						<hr>
-						<label class="d-block">First Name <sub>*</sub></label>
-						<input type="text" name="">
-						<label class="d-block">Last Name <sub>*</sub></label>
-						<input type="text" name="">
-						<label class="d-block">Country<sub>*</sub></label>
-						<select>
-							<option>Select Country</option>
-							<option>india</option>
-							<option>usa</option>
-						</select>
-						<label class="d-block">Postcode  <sub>*</sub></label>
-						<input type="number" name="">
-						<label class="d-block">Street Address  <sub>*</sub></label>
-						<label class="d-block">Street Address: Line 1</label>
-						<textarea cols="50" rows="3"></textarea>
-						<label class="d-block">County</label>
-						<input type="text" name="">
-						<label class="d-block">City <sub>*</sub></label>
-						<input type="text" name="">
-						<label class="d-block">Phone Number <sub>*</sub></label>
-						<input type="number" name="">
+            <div class="form-group">
+           <label for="email">Last Name<span style="color:red;">*</span></label>
+           <input type="text" class="form-control" placeholder="Enter Name" id="last_name" name="last_name" required>
+             </div>
 
-						<!-- <p class="mt-5"><a class="method_span">2</a>SHIPPING ADDRESS</p>
-						<span>Please select a preferred delivery method</span> -->
-						<!-- <div  class="container-fluid meth_pay mb-3">
-							<div class="row">
-								<div class="col-1">
-									<input type="radio" name="">
-								</div>
-								<div class="col-9">
-									<p>FREE DELIVERY</p>
-									<span>Delivered directly into your garden or garage. Self assembly required.</span>
-								</div>
-								<div class="col-2">
-									<p><span>$</span>0.00</p>
-								</div>
-							</div>
-						</div> -->
-						<!-- <div  class="container-fluid meth_pay mb-3">
-							<div class="row">
-								<div class="col-1">
-									<input type="radio" name="">
-								</div>
-								<div class="col-9">
-									<p>PLATINUM DELIVERY SERVICE</p>
-									<span>Delivered directly into your garden or garage, assembled by our team and a full demonstration carried out. Packaging is removed and recycled. 63% of customers chose this.</span>
-								</div>
-								<div class="col-2">
-									<p><span>$</span>99.00</p>
-								</div>
-							</div>
-						</div> -->
-					</form>
-				</div>
-				<div class="col-md-3 ml-auto mt-5 mt-lg-0">
-					<table class="cart_table side_cart">
-						<tr style="background: #edeee6;">
-							<th class="pt-2 pb-2 pl-2 pr-2">Order Summary <span>(1 item)</span></th>
-							<th></th>
-						</tr>
-						<tr >
-							<td>Subtotal</td>
-							<td><span>$	</span>350.00</td>
-						</tr>
+             <div class="form-group">
+               <label for="business_name">Business/company Name</label>
+               <input type="text" class="form-control" placeholder="Enter Business Name" id="business_name" name="business_name">
+             </div>
 
-						<tr>
-							<td>VAT</td>
-							<td><span>$	</span>50.00</td>
-						</tr>
+             <div class="form-group">
+              <label for="email">Email<span style="color:red;">*</span></label>
+              <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+                </div>
 
-						<tr>
-							<td>Order Total</td>
-							<td><span>$	</span>400.00</td>
-						</tr>
-						<tr>
-							<td class="bor_ra p-0" colspan="2">
-								<button class="cart_btn h-auto mob_btn"><i class="fa fa-lock mr-3" aria-hidden="true"></i>PROCEED TO PAYMENT</button>
-							</td>
-						</tr>
-					</table>
-					<div class="row mt-4">
-						<div class="col-5 m-auto">
-							<img src="img/norton_logo.png">
-						</div>
-						<div class="col-5 m-auto">
-							<img src="img/ssl_logo.png">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                <!-- <div class="form-group">
+                  <label for="country">Country<span style="color:red;">*</span></label>
+                  <select class="country" name="country" id="cars" required>
 
-	<!-- login end -->
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Aland Islands">Aland Islands</option>
+                  <option value="Albania">Albania</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
 
+                </select>
+                </div> -->
+<!--
+                                  <label for="contact_number">Contact<span style="color:red;">*</span></label>
+                  <div class="form-group d-flex">
+                    <span style="border: 1px solid #52c1b8;border-right: 0;border-top-left-radius: .25rem;border-bottom-left-radius: .25rem;">
+                      <img src="images/flags-us.gif" id="flag_img" style="width:53px;height:100%;">
+                    </span>
+
+                  <select class="country_code" name="country_code" id="country_code" required>
+
+
+                        <option value="AF +93" code="AF">AF +93</option>
+                    <option value="AL +355" code="AL">AL +355</option>
+                    <option value="DZ +213" code="DZ">DZ +213</option>
+                    <option value="AS +1684" code="AS">AS +1684</option>
+                    <option value="AD +376" code="AD">AD +376</option>
+                    <option value="AO +244" code="AO">AO +244</option>
+                    <option value="AI +1264" code="AI">AI +1264</option>
+                    <option value="AQ +0" code="AQ">AQ +0</option>
+                    <option value="AG +1268" code="AG">AG +1268</option>
+
+                  </select>
+
+
+             <input type="number" class="form-control good_in" placeholder="Enter Contact" id="contact_number" name="contact_number" required>
+
+              </div> -->
+
+
+                <div class="form-group">
+                          <label for="pwd">Message<span style="color:red;">*</span></label>
+                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
+                      </div>
+
+                                          <label for="pwd">Add Images</label>
+                      <br>
+                      <br>
+                    <div class="row">
+                    <div class="col-lg-4">
+
+                      <label for="image1">Select a file:</label>
+                      <input type="file" id="image1" name="image1"><br><br>
+
+                      </div>
+                    <div class="col-lg-4">
+
+                      <label for="image2">Select a file:</label>
+                      <input type="file" id="image2" name="image2"><br><br>
+
+                      </div>
+
+                    <div class="col-lg-4">
+
+                      <label for="image3">Select a file:</label>
+                      <input type="file" id="image3" name="image3"><br><br>
+
+                      </div>
+                    <div class="col-lg-4">
+
+                      <label for="image4">Select a file:</label>
+                      <input type="file" id="image4" name="image4"><br><br>
+
+                      </div>
+
+                    <div class="col-lg-4">
+
+                      <label for="image5">Select a file:</label>
+                      <input type="file" id="image5" name="image5"><br><br>
+
+                      </div>
+                    <div class="col-lg-4">
+
+                      <label for="image6">Select a file:</label>
+                      <input type="file" id="image6" name="image6"><br><br>
+
+                      </div>
+                      <div class="form-group">
+                          <script src="js/recaptcha-api.js" async defer></script>
+                          <div class="g-recaptcha" name="g-recaptcha-response" data-sitekey="6LeDYngaAAAAAOpwYNf4ei2CR3CVs6I-dSw1OAPL"></div>
+                        </div>
+
+                      </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -1318,16 +1366,16 @@
 			<div class="col-md-3">
 				<h5>Information</h5>
 				<ul class="pl-0">
-					<li>
-						<a href="custom_order.html">
-							Custom Order
-						</a>
-					</li>
-					<li>
-						<a href="corporate.html">
-							Corporate Order
-						</a>
-					</li>
+          <li>
+            <a href="custom_order.html">
+              Custom Order
+            </a>
+          </li>
+          <li>
+            <a href="corporate.html">
+              Corporate Order
+            </a>
+          </li>
 				</ul>
 			</div>
 			<div class="col-md-3 ml-auto">

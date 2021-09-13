@@ -317,7 +317,7 @@ header {
 
 .view_btn {
 	cursor: pointer;
-	background: #f38d64;
+	background: #de542d;
 	border: 0;
 	color: #ffff;
 	height: 40px;
@@ -327,7 +327,7 @@ header {
 
 .bor_ra button {
 	cursor: pointer;
-	background: #f38d64;
+	background: #de542d;
 	border: 0;
 	color: #ffff;
 	height: 40px;
@@ -366,7 +366,7 @@ header {
 }
 
 .short_text {
-	color: #c6c61f;
+	color: #de542d;
 	font-weight: 600;
 }
 
@@ -443,7 +443,7 @@ header {
 
 
 .write_rat span{
-	color: #4bae4f;
+	color: #999;
 	text-decoration: underline;
 	font-size:11px;
 }
@@ -453,9 +453,20 @@ header {
 .det_text p{
 	font-size: 14px;
 }
+.slider_b_n{
+	position: absolute;
+	right: 4px !important;
+	top: 42%
+}
+.slider_b_p{
+	position: absolute;
+	left: 4px !important;
+	top: 42%
+
+}
 
 .stok{
-	color: #1f91d2;
+	color: #000;
 }
 
 .old_price{
@@ -498,7 +509,7 @@ header {
 .taxnote{
 	font-size: 12px !important;
     padding-top: 2px;
-    color: #ff3333 !important;
+    color: #000 !important;
 }
 
 .qty-block {
@@ -577,7 +588,7 @@ header {
 
 .add_btn {
     width: 100%;
-    background: #ff9501;
+    background: #de542d;
     border: 0;
     color: #fff;
     height: 44px;
@@ -587,7 +598,7 @@ header {
 
 .pro_btn {
     width: 100%;
-    background: #1d93bb;
+    background: #616161;
     border: 0;
     color: #fff;
     height: 44px;
@@ -717,7 +728,7 @@ a.knw_btn {
 
 .method_span{
     display: inline-flex;
-    background: #ff9501;
+    background: #de542d;
     border-radius: 50px;
     width: 30px;
     height: 30px;
@@ -787,6 +798,27 @@ sub{
     color: #000;
     font-weight: 600;
     margin-bottom: 0;
+}
+.f_button1 button{
+	background-color: #de542d;
+	color: #fff !important;
+	width: 135px !important;
+	height: 53px;
+	font-size: 17px;
+	font-family: 'FontAwesome';
+	font-weight: 400;
+
+}
+
+.f_button2 button{
+	background-color: #212529;
+	color: #fff !important;
+	width: 135px !important;
+	height: 53px;
+	font-size: 17px;
+	font-family: 'FontAwesome';
+	font-weight: 400;
+
 }
 
 
