@@ -1122,7 +1122,9 @@
 	<!-- header end -->
 
 	<!-- filter -->
-
+	<button class="addtoCart-mb btn"
+		style="background: orange;font-weight:500;border-radius: 20px; font-size: 13px; color: white; margin-top: -15px;">ADD
+		TO CART</button>
 	<section class=" mt-5 details_page">
 		<div class="container ">
 			<div class="row">
@@ -1171,42 +1173,37 @@
 					</div>
 				</div>
 				<div class="col-md-6 mr-auto det_text">
-					<div class="d-flex">
-						<h4 class="w-60 d-flex mb-0 mt-3 mt-lg-0">Vincent Metal Chair - Fabric Upholstered Seat & Metal
+					
+						<h4 class="d-flex mb-0 mt-3 mt-lg-0">Vincent Metal Chair - Fabric Upholstered Seat & Metal
 							Frame Legs</h4>
-						<div style="font-size: 35px;" class="w-30 d-flex">
-							<span style="margin: 10px;"><i class="fa fa-heart-o"></i></span>
-							<span style="margin: 10px;"><i class="fa fa-share-alt"></i></span>
-						</div>
-					</div>
-					<div class="d-flex">
-						<small class="mt-auto"><i class="fa fa-inr"></i>350</small>
-						<button class="btn
-						ml-auto p-2 pl-4 pr-4"
-							style="background: orange;font-weight:500;border-radius: 20px; font-size: 13px; color: white;">ADD
-							TO CART</button>
-					</div>
-					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-						data-parent="#accordionExample">
-						<div class="card-body">
-
-							<small>The Windsor Sofa Collection has a unique blend of design, comfort and style. The
-								Windsor 2 has been crafted with an exceptional eye for detail and was designed with
-								superior comfort in mind. This has been achieved thanks to the deep seating and high
-								quality cushioning that has dual-density foam, this ensures you not only get the perfect
-								looking sofa set but you also benefit from the extra comfort and support. When not in
-								use the footstools simply tuck away under the coffee table.</small>
-						</div>
-					</div>
-					<div class="d-flex">
+						<!-- <div style="font-size: 35px;" class="w-30 d-flex">
+							<span style="margin: 10px; cursor: pointer;"><i class="fa fa-heart-o"></i></span>
+							<span style="margin: 10px; cursor: pointer;"><i class="fa fa-share-alt"></i></span>
+						</div> -->
+					
+					<div class="d-flex mt-2">
 						<span>Price :</span>
 						<span class="ml-5 mt-2" style="font-size: 1.27rem; font-weight: 600;"><i
 								class="fa fa-inr"></i>350</span>
-						<span style="font-size: 25px; border-radius: 50%; background-color: #505251; color: white;"
+						<!-- <span style="font-size: 25px; border-radius: 50%; background-color: #505251; color: white;"
 							class="btn ml-auto"><i class='fa fa-comments-o'></i>
-						</span>
+						</span> -->
+						<span class="ml-auto wishlist" style="font-size: 2rem; cursor: pointer;"><i style="color: lightgrey;" class="fa fa-heart"></i></span>
 					</div>
+					<script>
+						const wishlist=document.querySelector(".fa-heart");
+						console.log(wishlist)
+						wishlist.onclick=() =>{
+							if(wishlist.style.color==="lightgrey") {
+								wishlist.style.color="red";
+							} else {
+								wishlist.style.color="lightgrey"
+							}
+							
+						console.log(wishlist)
 
+						}
+					</script>
 					<!-- <p class="write_rat">
 						<span>Write Your Review</span>
 					</p> -->
@@ -1240,9 +1237,9 @@
 
 					<p>Prices Displayed are per Chair. Free shipping for orders above 50 chair.</p>
 
-					<div class="qty-block">
-						<label for="qty" style="padding: 10px px;">Qty:</label>
+					<div class="qty-block d-flex">
 						<div class="cart-plus-minus d-flex">
+							<label for="qty" style="padding: 10px 10px;">Qty:</label>
 							<span type="button" class="btn btn-primary
 							cart-minus-1">-</span>
 							<input style="height: 42px;" type="text" name="qty" id="qty" maxlength="12" value="150" title="Qty"
@@ -1250,6 +1247,7 @@
 							<span type="button" class="btn btn-primary
 							cart-plus-1">+</span>
 						</div>
+						
 						<!-- quantity Add and Subtract -->
 						<script>
 							const qty = document.querySelector("#qty");
@@ -1260,10 +1258,52 @@
 								qty.value = parseInt(qty.value) - 1;
 							}
 						</script>
+						<style>
+							@media only screen and (max-width: 500px) {
+								.addtoCart {
+									display: none;
+								}
+								.addtoCart-mb {
+									position: fixed;
+  									bottom: 10px;
+									/* position: sticky; */
+									/* display: none; */
+									width: 100vw;
+									display: block;
+									z-index: 3;
+									/* bottom: 0; */
+								}
+							}
+						</style>
+						<button class="addtoCart btn
+						ml-3 p-2 pl-4 pr-4"
+							style="background: orange;font-weight:500;border-radius: 20px; font-size: 13px; color: white; margin-top: -15px;">ADD
+							TO CART</button>
 						<!-- quantity Add and Subtract -->
-						<input type="hidden" id="minorder" value="150">
+						<!-- <input type="hidden" id="minorder" value="150"> -->
 						<!-- <div class="min-qty">Minimum Order Qty : 150</div> -->
 					</div>
+					
+					<!-- <div class="d-flex">
+						<small class="mt-auto"><i class="fa fa-inr"></i>350</small>
+						<button class="btn
+						ml-auto p-2 pl-4 pr-4"
+							style="background: orange;font-weight:500;border-radius: 20px; font-size: 13px; color: white;">ADD
+							TO CART</button>
+					</div> -->
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+						data-parent="#accordionExample">
+						<div class="card-body">
+							<h6>Product Description:</h6>
+							<small>The Windsor Sofa Collection has a unique blend of design, comfort and style. The
+								Windsor 2 has been crafted with an exceptional eye for detail and was designed with
+								superior comfort in mind. This has been achieved thanks to the deep seating and high
+								quality cushioning that has dual-density foam, this ensures you not only get the perfect
+								looking sofa set but you also benefit from the extra comfort and support. When not in
+								use the footstools simply tuck away under the coffee table.</small>
+						</div>
+					</div>
+					
 					<h5>Find out more about what you are buying</h5>
 					<!-- <div class="row mt-4">
 						<div class="col-md-6">
@@ -1372,7 +1412,8 @@
 	<!-- related products start -->
 
 
-	<section class="mt-5 pt-5">
+	<!-- 
+		<section class="mt-5 pt-5">
 		<div class="container overflow-hidden">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -1385,7 +1426,7 @@
 				<div class="col-md-12">
 					<!-- Swiper -->
 					<!-- <div class="swiper-button-next"></div>
-				      <div class="swiper-button-prev"></div> -->
+				      <div class="swiper-button-prev"></div>
 					<div class="swiper-container mySwiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -1401,7 +1442,7 @@
 												<span>M.R.P: </span>
 												<span>Rs.40.00</span>
 											</del>
-										</div> -->
+										</div> 
 										<div class="price_box">
 											<p><i class="fa fa-inr"></i> 38.00</p>
 										</div>
@@ -1413,7 +1454,7 @@
 
 												<!-- <span class="dot dot4"></span>
 												<span class="dot dot5"></span>
-												<span class="dot dot6"></span> -->
+												<span class="dot dot6"></span> 
 
 											</div>
 											<div>
@@ -1426,7 +1467,7 @@
 										<!-- <div>
 											<button class="cart_btn">Add to cart <i
 													class="fa fa-shopping-bag ml-2"></i></button>
-										</div> -->
+										</div> 
 									</div>
 								</div>
 							</div>
@@ -1439,8 +1480,11 @@
 									display: inline-block;
 									background-color: #bbb;
 									margin: 6px;
+									cursor: pointer;
 								}
-
+								.dot:hover{
+									border: 1px solid white;
+								}
 								.dot2 {
 									background-color: #b0857e;
 								}
@@ -1475,7 +1519,7 @@
 												<span>M.R.P: </span>
 												<span>Rs.40.00</span>
 											</del>
-										</div> -->
+										</div> 
 										<div class="price_box">
 											<p><i class="fa fa-inr"></i> 38.00</p>
 										</div>
@@ -1487,7 +1531,7 @@
 
 												<!-- <span class="dot dot4"></span>
 											<span class="dot dot5"></span>
-											<span class="dot dot6"></span> -->
+											<span class="dot dot6"></span> 
 
 											</div>
 											<div>
@@ -1500,7 +1544,7 @@
 										<!-- <div>
 											<button class="cart_btn">Add to cart <i
 													class="fa fa-shopping-bag ml-2"></i></button>
-										</div> -->
+										</div> 
 									</div>
 								</div>
 							</div>
@@ -1519,7 +1563,7 @@
 												<span>M.R.P: </span>
 												<span>Rs.40.00</span>
 											</del>
-										</div> -->
+										</div> 
 										<div class="price_box">
 											<p><i class="fa fa-inr"></i> 38.00</p>
 										</div>
@@ -1531,7 +1575,7 @@
 
 												<!-- <span class="dot dot4"></span>
 											<span class="dot dot5"></span>
-											<span class="dot dot6"></span> -->
+											<span class="dot dot6"></span> 
 
 											</div>
 											<div>
@@ -1544,7 +1588,7 @@
 										<!-- <div>
 											<button class="cart_btn">Add to cart <i
 													class="fa fa-shopping-bag ml-2"></i></button>
-										</div> -->
+										</div> 
 									</div>
 								</div>
 							</div>
@@ -1563,7 +1607,7 @@
 												<span>M.R.P: </span>
 												<span>Rs.40.00</span>
 											</del>
-										</div> -->
+										</div> 
 										<div class="price_box">
 											<p><i class="fa fa-inr"></i> 38.00</p>
 										</div>
@@ -1575,7 +1619,7 @@
 
 												<!-- <span class="dot dot4"></span>
 											<span class="dot dot5"></span>
-											<span class="dot dot6"></span> -->
+											<span class="dot dot6"></span> 
 
 											</div>
 											<div>
@@ -1588,7 +1632,7 @@
 										<!-- <div>
 											<button class="cart_btn">Add to cart <i
 													class="fa fa-shopping-bag ml-2"></i></button>
-										</div> -->
+										</div> 
 									</div>
 								</div>
 							</div>
@@ -1606,7 +1650,7 @@
 												<span>M.R.P: </span>
 												<span>Rs.40.00</span>
 											</del>
-										</div> -->
+										</div> 
 										<div class="price_box">
 											<p><i class="fa fa-inr"></i> 38.00</p>
 										</div>
@@ -1618,7 +1662,7 @@
 
 												<!-- <span class="dot dot4"></span>
 											<span class="dot dot5"></span>
-											<span class="dot dot6"></span> -->
+											<span class="dot dot6"></span> 
 
 											</div>
 											<div>
@@ -1631,19 +1675,160 @@
 										<!-- <div>
 											<button class="cart_btn">Add to cart <i
 													class="fa fa-shopping-bag ml-2"></i></button>
-										</div> -->
+										</div> 
 									</div>
 								</div>
 							</div>
 
-						<!-- <div class="swiper-pagination"></div> -->
+						<!-- <div class="swiper-pagination"></div> 
 					</div>
 				</div>
 
 			</div>
 		</div>
-	</section>
+	</section> -->
 
+	<section class="mt-5 pt-5">
+		<div class="container overflow-hidden">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1>RELATED PRODUCTS</h1>
+					<p>The furniture our customers love:</p>
+				</div>
+			</div>
+	
+			<div class="row  cate_row">
+					<div class="col-md-12">
+					  <!-- Swiper -->
+							<!-- <div class="swiper-button-next"></div>
+						  <div class="swiper-button-prev"></div> -->
+						<div class="swiper-container mySwiper">
+						  <div class="swiper-wrapper">
+							<div class="swiper-slide">
+							  <div class=" mb-4">
+							  <div class="bor_ra">
+								  <a href="productdetails.html">
+								<img src="img/pringles-chair-1_3.jpg">
+								</a>
+								<p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
+								<div class="price_box_cut">
+								  <del>
+									  <span>M.R.P: </span>
+									  <span>Rs.40.00</span>
+								  </del>
+								</div>
+								<div class="price_box">
+	
+								  <p><span>Sale Price:</span>Rs.38.00</p>
+								</div>
+								<div>
+								  <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
+								</div>
+							  </div>
+							</div>
+							</div>
+							<div class="swiper-slide">
+							  <div class=" mb-4">
+							  <div class="bor_ra">
+								  <a href="productdetails.html">
+								<img src="img/sven-bar-stool---white---grey-1_1.jpg">
+								</a>
+								<p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
+								<div class="price_box_cut">
+								  <del>
+									  <span>M.R.P: </span>
+									  <span>Rs.40.00</span>
+								  </del>
+								</div>
+								<div class="price_box">
+	
+								  <p><span>Sale Price:  </span>Rs.38.00</p>
+								</div>
+								<div>
+								  <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
+								</div>
+							  </div>
+							</div>
+							</div>
+							<div class="swiper-slide">
+							  <div class=" mb-4">
+							  <div class="bor_ra">
+								  <a href="productdetails.html">
+								<img src="img/geo-chair-_ms_-1_1.jpg">
+								</a>
+								<p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
+								<div class="price_box_cut">
+								  <del>
+									  <span>M.R.P: </span>
+									  <span>Rs.40.00</span>
+								  </del>
+								</div>
+								<div class="price_box">
+	
+								  <p><span>Sale Price:  </span>Rs.38.00</p>
+								</div>
+								<div>
+								  <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
+								</div>
+							  </div>
+							</div>
+							</div>
+							<div class="swiper-slide">
+							  <div class=" mb-4">
+							  <div class="bor_ra">
+								  <a href="productdetails.html">
+								<img src="img/theatre-solid-teak-wood-chair--1_2.jpg">
+								</a>
+								<p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
+								<div class="price_box_cut">
+								  <del>
+									  <span>M.R.P: </span>
+									  <span>Rs.40.00</span>
+								  </del>
+								</div>
+								<div class="price_box">
+	
+								  <p><span>Sale Price:  </span>Rs.38.00</p>
+								</div>
+								<div>
+								  <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
+								</div>
+							  </div>
+							</div>
+							</div>
+							<div class="swiper-slide">
+							  <div class=" mb-4">
+							  <div class="bor_ra">
+								  <a href="productdetails.html">
+								<img src="img/arne-metal---solid-wood-chair-with-arms---steam-beech-1_1.jpg">
+								</a>
+								<p>Vincent Metal Chair - Fabric Upholstered Seat & Metal Frame Legs</p>
+								<div class="price_box_cut">
+								  <del>
+									  <span>M.R.P: </span>
+									  <span>Rs.40.00</span>
+								  </del>
+								</div>
+								<div class="price_box">
+	
+								  <p><span>Sale Price:  </span>Rs.38.00</p>
+								</div>
+								<div>
+								  <button class="cart_btn">Add to cart <i class="fa fa-shopping-bag ml-2"></i></button>
+								</div>
+							  </div>
+							</div>
+							</div>
+						  </div>
+	
+						  <!-- <div class="swiper-pagination"></div> -->
+						</div>
+					</div>
+	
+				</div>
+		</div>
+	</section>
+		
 	<!-- related products  end -->
 
 
