@@ -5,6 +5,11 @@
 	<title>all products</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="minimum-scale=1"> -->
+	<meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1123,7 +1128,7 @@
 
 	<!-- filter -->
 	<button class="addtoCart-mb btn"
-		style="background: orange;font-weight:500;border-radius: 20px; font-size: 13px; color: white; margin-top: -15px;">ADD
+		style="background: orange; font-weight:500;border-radius: 20px; font-size: 13px; color: white;">ADD
 		TO CART</button>
 	<section class=" mt-5 details_page">
 		<div class="container ">
@@ -1173,9 +1178,8 @@
 					</div>
 				</div>
 				<div class="col-md-6 mr-auto det_text">
-					
-						<h4 class="d-flex mb-0 mt-3 mt-lg-0">Vincent Metal Chair - Fabric Upholstered Seat & Metal
-							Frame Legs</h4>
+						<h5 class="d-flex mb-0 mt-3 mt-lg-0">Vincent Metal Chair - Fabric Upholstered Seat & Metal
+							Frame Legs</h5>
 						<!-- <div style="font-size: 35px;" class="w-30 d-flex">
 							<span style="margin: 10px; cursor: pointer;"><i class="fa fa-heart-o"></i></span>
 							<span style="margin: 10px; cursor: pointer;"><i class="fa fa-share-alt"></i></span>
@@ -1190,18 +1194,15 @@
 						</span> -->
 						<span class="ml-auto wishlist" style="font-size: 2rem; cursor: pointer;"><i style="color: lightgrey;" class="fa fa-heart"></i></span>
 					</div>
+					
 					<script>
 						const wishlist=document.querySelector(".fa-heart");
-						console.log(wishlist)
 						wishlist.onclick=() =>{
 							if(wishlist.style.color==="lightgrey") {
 								wishlist.style.color="red";
 							} else {
 								wishlist.style.color="lightgrey"
 							}
-							
-						console.log(wishlist)
-
 						}
 					</script>
 					<!-- <p class="write_rat">
@@ -1235,9 +1236,9 @@
 
 					<!-- <span style="font-size: x-small;">Create Outdoor Chair price.</span> -->
 
-					<p>Prices Displayed are per Chair. Free shipping for orders above 50 chair.</p>
+					<!-- <p>Prices Displayed are per Chair. Free shipping for orders above 50 chair.</p> -->
 
-					<div class="qty-block d-flex">
+					<div class="qty-block d-flex mt-3">
 						<div class="cart-plus-minus d-flex">
 							<label for="qty" style="padding: 10px 10px;">Qty:</label>
 							<span type="button" class="btn btn-primary
@@ -1259,13 +1260,19 @@
 							}
 						</script>
 						<style>
+							.addtoCart-mb {
+								display: none;
+							}
+							.wishlist {
+								margin-right: 7rem;
+							}
 							@media only screen and (max-width: 500px) {
 								.addtoCart {
 									display: none;
 								}
 								.addtoCart-mb {
 									position: fixed;
-  									bottom: 10px;
+  									bottom: 0px;
 									/* position: sticky; */
 									/* display: none; */
 									width: 100vw;
@@ -1273,10 +1280,13 @@
 									z-index: 3;
 									/* bottom: 0; */
 								}
+								.wishlist {
+									margin-right: 1rem;
+								}
 							}
 						</style>
 						<button class="addtoCart btn
-						ml-3 p-2 pl-4 pr-4"
+						ml-auto mr-5 p-2 pl-4 pr-4"
 							style="background: orange;font-weight:500;border-radius: 20px; font-size: 13px; color: white; margin-top: -15px;">ADD
 							TO CART</button>
 						<!-- quantity Add and Subtract -->
@@ -1687,7 +1697,7 @@
 			</div>
 		</div>
 	</section> -->
-
+	
 	<section class="mt-5 pt-5">
 		<div class="container overflow-hidden">
 			<div class="row">

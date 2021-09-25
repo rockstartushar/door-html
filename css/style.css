@@ -50,7 +50,7 @@ header {
 	background: #fff;
 	z-index: 5000;
 	position: sticky;
-	top: -109px;
+	/* top: -109px; */
 
 }
 
